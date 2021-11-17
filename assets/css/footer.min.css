@@ -1,0 +1,131 @@
+footer {
+  background-image: url(../images/footer-bg.png);
+  width: 100%;
+  height: 1095px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer_inner {
+  padding-top: 45px;
+}
+.footer_inner > h1 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  /* identical to box height */
+  letter-spacing: 0.12px;
+  color: #FFFFFF;
+}
+.footer_inner > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_inner_images {
+  margin-top: 40px;
+}
+.footer_inner_images > img:first-child {
+  max-width: 600px;
+  max-height: 510px;
+  width: 100%;
+}
+.footer_inner_images > img:last-child {
+  max-width: 385px;
+  max-height: 510px;
+  width: 100%;
+}
+.footer_inner > img {
+  width: 24px;
+  height: 24px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.footer_social {
+  margin-top: 25px;
+}
+.footer_social > a {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.096px;
+  color: #FFFFFF;
+}
+.footer_social > div {
+  display: flex;
+  align-items: center;
+}
+.footer_social > div > p {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.048px;
+  color: #FFFFFF;
+  margin-right: 20px;
+}
+.footer_social > div > a {
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+}
+.footer_social > div > a > img {
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+}
+.footer_contacts {
+  margin-top: 65px;
+}
+.footer_contacts > div > span {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  letter-spacing: -0.393921px;
+  color: #96A794;
+}
+.footer_contacts > div > p, .footer_contacts > div a {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.393921px;
+  color: #FFFFFF;
+}
+.footer_contacts > div > p {
+  margin-top: 35px;
+}
+.footer_copyright {
+  margin-top: 55px;
+}
+.footer_copyright > div {
+  display: flex;
+  align-items: center;
+}
+.footer_copyright > div > h1 {
+  font-weight: bold;
+  font-size: 24px;
+  /* identical to box height */
+  letter-spacing: 0.096px;
+  color: #FFFFFF;
+  margin-left: 15px;
+}
+.footer_copyright > div > span {
+  font-weight: normal;
+  font-size: 14px;
+  /* identical to box height */
+  letter-spacing: 0.056px;
+  color: #FFFFFF;
+  margin-left: 55px;
+}
+.footer_copyright > p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: right;
+  letter-spacing: 0.056px;
+  color: #FFFFFF;
+}
+.footer_copyright > p > a {
+  color: #FFFFFF;
+}
