@@ -111,13 +111,21 @@ header {
     margin-left: 35px;
 }
 
-.header_contacts > div > img {
-    width: 44px;
-    height: 44px;
+.header_contacts > div > a {
+    padding: 15px 17px;
+    background-color: #56B145;
+    border-radius: 50px;
 }
 
-.header_contacts > div > img:last-child {
+.header_contacts > div > a:last-child {
     margin-left: 8px;
+}
+
+.header_contacts > div > a > img {
+    width: 18px;
+    height: 18px;
+    -o-object-fit: scale-down;
+    object-fit: scale-down;
 }
 
 .header_content {

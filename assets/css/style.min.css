@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
   scroll-padding-block: 100px;
@@ -503,19 +504,18 @@ ul.slick-dots > li > button {
   display: flex;
   flex-direction: column;
 }
-.work_inner > div:nth-child(1) {
-  display: flex;
+.work_inner > div.work_inner_content {
   justify-content: space-between;
 }
-.work_inner > div:nth-child(1) > img {
+.work_inner > div.work_inner_content > img {
   max-width: 442px;
   max-height: 445px;
   margin-top: -12%;
 }
-.work_inner > div:nth-child(1) > div {
+.work_inner > div.work_inner_content > div {
   max-width: 390px;
 }
-.work_inner > div:nth-child(1) > div > h1 {
+.work_inner > div.work_inner_content > div > h1 {
   font-weight: bold;
   font-size: 55px;
   line-height: 66px;
@@ -523,7 +523,7 @@ ul.slick-dots > li > button {
   color: #FFFFFF;
   margin-top: 45px;
 }
-.work_inner > div:nth-child(1) > div > p {
+.work_inner > div.work_inner_content > div > p {
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
@@ -634,6 +634,222 @@ ul.slick-dots > li > button {
   max-height: 260px;
 }
 
+.modal {
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* цвет фона */
+  z-index: 1050;
+  opacity: 0;
+  /* по умолчанию модальное окно прозрачно */
+  -webkit-transition: opacity 200ms ease-in;
+  -moz-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  /* анимация перехода */
+  pointer-events: none;
+  /* элемент невидим для событий мыши */
+  margin: 0;
+  padding: 0;
+}
+
+/* при отображении модального окно */
+.modal:target {
+  opacity: 1;
+  /* делаем окно видимым */
+  pointer-events: auto;
+  /* элемент видим для событий мыши */
+  overflow-y: auto;
+  /* добавляем прокрутку по y, когда элемент не помещается на страницу */
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+    /* для отображения модального окна по центру */
+  }
+}
+/* свойства для блока, содержащего контент модального окна */
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* свойства для кнопки "Закрыть" */
+.close {
+  float: right;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 15px;
+  overflow: auto;
+}
+.modal-body > div {
+  width: 90%;
+  margin: 0 auto;
+}
+.modal-body > div input, .modal-body > div button {
+  display: block;
+  width: 100%;
+}
+.modal-body > div > p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.072px;
+  max-width: 480px;
+  color: #000000;
+  margin-top: 25px;
+}
+.modal-body > div > form {
+  max-width: 100%;
+}
+.modal-body > div > form > input {
+  width: calc(100% - 25px);
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  border-radius: 8px;
+  height: 60px;
+  font-weight: bold;
+  font-size: 20px;
+  letter-spacing: 0.08px;
+  color: #000000;
+  padding-left: 25px;
+}
+.modal-body > div > form > input.margin {
+  margin-top: 10px;
+}
+.modal-body > div > form > input::placeholder {
+  font-weight: 700;
+  font-size: 20px;
+  /* identical to box height */
+  letter-spacing: 0.08px;
+  color: #000000;
+}
+.modal-body > div > form > button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.08px;
+  color: #FFFFFF;
+  background: #56B145;
+  border-radius: 14px;
+  border: none;
+  padding: 24px 0;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.base {
+  display: none;
+}
+.base.active {
+  display: flex;
+}
+.base.off {
+  display: none;
+}
+
+.private_house {
+  display: flex;
+}
+.private_house.active {
+  display: flex;
+}
+.private_house.off {
+  display: none;
+}
+
+.office {
+  display: none;
+}
+.office.active {
+  display: flex;
+}
+.office.off {
+  display: none;
+}
+
 footer {
   background-image: url(../images/footer-bg.png);
   width: 100%;
@@ -660,6 +876,10 @@ footer {
 }
 .footer_inner_images {
   margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .footer_inner_images > img:first-child {
   max-width: 600px;
@@ -764,4 +984,12 @@ footer {
 }
 .footer_copyright > p > a {
   color: #FFFFFF;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+#footerCarusel {
+  overflow: hidden;
 }

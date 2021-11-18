@@ -24,6 +24,10 @@ footer {
 }
 .footer_inner_images {
   margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .footer_inner_images > img:first-child {
   max-width: 600px;
@@ -128,4 +132,12 @@ footer {
 }
 .footer_copyright > p > a {
   color: #FFFFFF;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+}
+
+#footerCarusel {
+  overflow: hidden;
 }
