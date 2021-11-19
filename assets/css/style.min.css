@@ -26,8 +26,7 @@ body {
 }
 
 header {
-  max-width: 1293px;
-  margin: 0 auto;
+  width: 100%;
   height: 2060px;
   background-image: url(../images/page-bg.png);
   background-repeat: no-repeat;
@@ -216,6 +215,8 @@ header {
 }
 .header_slider-slider > div > img {
   width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
 .header_slider-dots {
   margin-top: 30px;
@@ -238,6 +239,12 @@ ul.slick-dots > li.slick-active {
 }
 ul.slick-dots > li > button {
   display: none;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .advantage {
@@ -275,6 +282,7 @@ ul.slick-dots > li > button {
 }
 .advantage_item {
   display: flex;
+  width: 50%;
   align-items: center;
   margin-top: 60px;
 }
@@ -880,16 +888,12 @@ footer {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 510px;
 }
-.footer_inner_images > img:first-child {
-  max-width: 600px;
-  max-height: 510px;
+.footer_inner_images > img {
   width: 100%;
-}
-.footer_inner_images > img:last-child {
-  max-width: 385px;
-  max-height: 510px;
-  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .footer_inner > img {
   width: 24px;
@@ -992,4 +996,28 @@ footer {
 
 #footerCarusel {
   overflow: hidden;
+}
+
+.footer_slider-dots {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.footer_slider-dots ul.slick-dots {
+  display: flex;
+}
+.footer_slider-dots ul.slick-dots > li {
+  width: 13px;
+  height: 13px;
+  background: #E3EBE2;
+  transform: rotate(45deg);
+  list-style-type: none;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.footer_slider-dots ul.slick-dots > li.slick-active {
+  background: #9CCB4E;
+}
+.footer_slider-dots ul.slick-dots > li > button {
+  display: none;
 }

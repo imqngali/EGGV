@@ -30,6 +30,13 @@ footer {
 
 .footer_inner_images {
     margin-top: 40px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
 }
 
 .footer_inner_images > img:first-child {
@@ -158,4 +165,13 @@ footer {
 
 .footer_copyright > p > a {
     color: #FFFFFF;
+}
+
+.slick-initialized .slick-slide {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+#footerCarusel {
+    overflow: hidden;
 }

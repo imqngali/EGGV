@@ -1,6 +1,5 @@
 header {
-  max-width: 1293px;
-  margin: 0 auto;
+  width: 100%;
   height: 2060px;
   background-image: url(../images/page-bg.png);
   background-repeat: no-repeat;
@@ -189,6 +188,8 @@ header {
 }
 .header_slider-slider > div > img {
   width: 100%;
+  height: 100%;
+  object-fit: scale-down;
 }
 .header_slider-dots {
   margin-top: 30px;
@@ -211,4 +212,10 @@ ul.slick-dots > li.slick-active {
 }
 ul.slick-dots > li > button {
   display: none;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

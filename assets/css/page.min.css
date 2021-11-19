@@ -34,6 +34,7 @@
 }
 .advantage_item {
   display: flex;
+  width: 50%;
   align-items: center;
   margin-top: 60px;
 }
