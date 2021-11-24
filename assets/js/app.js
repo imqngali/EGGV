@@ -78,6 +78,8 @@ $('#social_obj').click(function(){
   $('.gooder').addClass('off');
   $('.horeka').removeClass('active');
   $('.horeka').addClass('off');
+  $('.office').removeClass('active');
+  $('.office').addClass('off');
 });
 
 
@@ -92,6 +94,8 @@ $('#gooder').click(function(){
   $('.social_obj').addClass('off');
   $('.horeka').removeClass('active');
   $('.horeka').addClass('off');
+  $('.office').removeClass('active');
+  $('.office').addClass('off');
 });
 
 
@@ -106,4 +110,6 @@ $('#horeka').click(function(){
   $('.social_obj').addClass('off');
   $('.gooder').removeClass('active');
   $('.gooder').addClass('off');
+  $('.office').removeClass('active');
+  $('.office').addClass('off');
 });
