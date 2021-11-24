@@ -323,6 +323,14 @@
   justify-content: space-between;
   margin-top: 75px;
 }
+.form_inner > div > h2 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.12px;
+  max-width: 425px;
+  color: #000000;
+}
 .form_inner > div:nth-child(1) input, .form_inner > div:nth-child(1) button {
   display: block;
   width: 100%;
@@ -607,5 +615,35 @@
   display: flex;
 }
 .office.off {
+  display: none;
+}
+
+.social_obj {
+  display: none;
+}
+.social_obj.active {
+  display: flex;
+}
+.social_obj.off {
+  display: none;
+}
+
+.gooder {
+  display: none;
+}
+.gooder.active {
+  display: flex;
+}
+.gooder.off {
+  display: none;
+}
+
+.horeka {
+  display: none;
+}
+.horeka.active {
+  display: flex;
+}
+.horeka.off {
   display: none;
 }

@@ -1,43 +1,109 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
-/******/ (function() { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
+$('.header_slider-slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+  dots: true,
+  autoplaySpeed: 5000,
+  appendDots: $('.header_slider-dots')
+});
 
-/***/ "./src/assets/js/app.js":
-/*!******************************!*\
-  !*** ./src/assets/js/app.js ***!
-  \******************************/
-/***/ (function() {
 
-eval("$('.header_slider-slider').slick({\r\n    slidesToShow: 1,\r\n    slidesToScroll: 1,\r\n    autoplay: true,\r\n    arrows: false,\r\n    dots: true,\r\n    autoplaySpeed: 5000,\r\n    appendDots: $('.header_slider-dots')\r\n});\r\n\r\n\r\n$('#footerCarusel').slick({\r\n    slidesToShow: 1,\r\n    slidesToScroll: 1,\r\n    autoplay: true,\r\n    arrows: false,\r\n    dots: true,\r\n    autoplaySpeed: 5000,\r\n    appendDots: $('.footer_slider-dots')\r\n});\r\n\r\n\r\n$('#private_house').click(function(){\r\n    $('.private_house').addClass('active');\r\n    $('.private_house').removeClass('off');\r\n    $('.base').removeClass('active');\r\n    $('.office').removeClass('active');\r\n    $('.base').addClass('off');\r\n    $('.office').addClass('off');\r\n});\r\n\r\n\r\n$('#base').click(function(){\r\n    $('.base').addClass('active');\r\n    $('.base').removeClass('off');\r\n    $('.private_house').removeClass('active');\r\n    $('.office').removeClass('active');\r\n    $('.private_house').addClass('off');\r\n    $('.office').addClass('off');\r\n});\r\n\r\n\r\n$('#office').click(function(){\r\n    $('.office').addClass('active');\r\n    $('.office').removeClass('off');\r\n    $('.private_house').removeClass('active');\r\n    $('.base').removeClass('active');\r\n    $('.private_house').addClass('off');\r\n    $('.base').addClass('off');\r\n});\r\n\r\n$('#private_house2').click(function(){\r\n    $('.private_house').addClass('active');\r\n    $('.private_house').removeClass('off');\r\n    $('.base').removeClass('active');\r\n    $('.office').removeClass('active');\r\n    $('.base').addClass('off');\r\n    $('.office').addClass('off');\r\n});\r\n\r\n\r\n$('#base2').click(function(){\r\n    $('.base').addClass('active');\r\n    $('.base').removeClass('off');\r\n    $('.private_house').removeClass('active');\r\n    $('.office').removeClass('active');\r\n    $('.private_house').addClass('off');\r\n    $('.office').addClass('off');\r\n});\r\n\r\n\r\n$('#office2').click(function(){\r\n    $('.office').addClass('active');\r\n    $('.office').removeClass('off');\r\n    $('.private_house').removeClass('active');\r\n    $('.base').removeClass('active');\r\n    $('.private_house').addClass('off');\r\n    $('.base').addClass('off');\r\n});\r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/app.js?");
+$('#footerCarusel').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  arrows: false,
+  dots: true,
+  autoplaySpeed: 5000,
+  appendDots: $('.footer_slider-dots')
+});
 
-/***/ }),
 
-/***/ "./src/assets/js/file2.js":
-/*!********************************!*\
-  !*** ./src/assets/js/file2.js ***!
-  \********************************/
-/***/ (function() {
+$('#private_house').click(function(){
+  $('.private_house').addClass('active');
+  $('.private_house').removeClass('off');
+  $('.base').removeClass('active');
+  $('.office').removeClass('active');
+  $('.base').addClass('off');
+  $('.office').addClass('off');
+  $('.social_obj').removeClass('active');
+  $('.gooder').removeClass('active');
+  $('.social_obj').addClass('off');
+  $('.gooder').addClass('off');
+  $('.horeka').removeClass('active');
+  $('.horeka').addClass('off');
+});
 
-eval("console.log('file 2');\r\n\n\n//# sourceURL=webpack://brainscloud/./src/assets/js/file2.js?");
 
-/***/ })
+$('#base').click(function(){
+  $('.base').addClass('active');
+  $('.base').removeClass('off');
+  $('.private_house').removeClass('active');
+  $('.office').removeClass('active');
+  $('.private_house').addClass('off');
+  $('.office').addClass('off');
+  $('.social_obj').removeClass('active');
+  $('.gooder').removeClass('active');
+  $('.social_obj').addClass('off');
+  $('.gooder').addClass('off');
+  $('.horeka').removeClass('active');
+  $('.horeka').addClass('off');
+});
 
-/******/ 	});
-/************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	__webpack_modules__["./src/assets/js/app.js"]();
-/******/ 	var __webpack_exports__ = {};
-/******/ 	__webpack_modules__["./src/assets/js/file2.js"]();
-/******/ 	
-/******/ })()
-;
+
+$('#office').click(function(){
+  $('.office').addClass('active');
+  $('.office').removeClass('off');
+  $('.private_house').removeClass('active');
+  $('.base').removeClass('active');
+  $('.private_house').addClass('off');
+  $('.base').addClass('off');
+  $('.social_obj').removeClass('active');
+  $('.gooder').removeClass('active');
+  $('.social_obj').addClass('off');
+  $('.gooder').addClass('off');
+  $('.horeka').removeClass('active');
+  $('.horeka').addClass('off');
+});
+
+$('#social_obj').click(function(){
+  $('.social_obj').addClass('active');
+  $('.social_obj').removeClass('off');
+  $('.private_house').removeClass('active');
+  $('.base').removeClass('active');
+  $('.private_house').addClass('off');
+  $('.base').addClass('off');
+  $('.gooder').removeClass('active');
+  $('.gooder').addClass('off');
+  $('.horeka').removeClass('active');
+  $('.horeka').addClass('off');
+});
+
+
+$('#gooder').click(function(){
+  $('.gooder').addClass('active');
+  $('.gooder').removeClass('off');
+  $('.private_house').removeClass('active');
+  $('.base').removeClass('active');
+  $('.private_house').addClass('off');
+  $('.base').addClass('off');
+  $('.social_obj').removeClass('active');
+  $('.social_obj').addClass('off');
+  $('.horeka').removeClass('active');
+  $('.horeka').addClass('off');
+});
+
+
+$('#horeka').click(function(){
+  $('.horeka').addClass('active');
+  $('.horeka').removeClass('off');
+  $('.private_house').removeClass('active');
+  $('.base').removeClass('active');
+  $('.private_house').addClass('off');
+  $('.base').addClass('off');
+  $('.social_obj').removeClass('active');
+  $('.social_obj').addClass('off');
+  $('.gooder').removeClass('active');
+  $('.gooder').addClass('off');
+});

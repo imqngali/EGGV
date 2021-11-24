@@ -48,6 +48,7 @@
 .advantage_item {
     display: -ms-flexbox;
     display: flex;
+    width: 50%;
     -ms-flex-align: center;
     align-items: center;
     margin-top: 60px;
@@ -411,6 +412,15 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 75px;
+}
+
+.form_inner > div > h2 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.12px;
+    max-width: 425px;
+    color: #000000;
 }
 
 .form_inner > div:nth-child(1) input, .form_inner > div:nth-child(1) button {
