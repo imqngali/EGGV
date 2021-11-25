@@ -899,7 +899,8 @@ ul.slick-dots > li > button {
 footer {
   background-image: url(../images/footer-bg.png);
   width: 100%;
-  height: 1095px;
+  height: fit-content;
+  padding-bottom: 25px;
   background-size: cover;
   background-repeat: no-repeat;
 }
